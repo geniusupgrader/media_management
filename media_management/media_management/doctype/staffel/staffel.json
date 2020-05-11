@@ -1,32 +1,27 @@
 {
- "autoname": "format:movie.{#####}",
- "creation": "2020-05-11 09:59:45.695374",
+ "autoname": "field:name1",
+ "creation": "2020-05-11 15:28:30.255075",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "title",
-  "seen"
+  "name1"
  ],
  "fields": [
   {
-   "fieldname": "title",
+   "fieldname": "name1",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Title",
-   "reqd": 1
-  },
-  {
-   "fieldname": "seen",
-   "fieldtype": "Data",
-   "label": "Seen"
+   "label": "name",
+   "reqd": 1,
+   "unique": 1
   }
  ],
- "modified": "2020-05-11 16:19:13.091731",
+ "modified": "2020-05-11 15:28:30.255075",
  "modified_by": "Administrator",
  "module": "Media Management",
- "name": "Movie",
- "owner": "email@robinrosenstock.com",
+ "name": "Staffel",
+ "owner": "Administrator",
  "permissions": [
   {
    "create": 1,
@@ -44,7 +39,6 @@
  "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "title_field": "title",
  "track_changes": 1,
  "track_seen": 1,
  "track_views": 1

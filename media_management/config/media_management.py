@@ -12,7 +12,29 @@ def get_data():
               "name": "Movie",
               "label": _("Movie"),
               "description": _("Description of Liste"),
+            },
+      {
+        "label":_("Media Management"),
+        "icon": "octicon octicon-briefcase",
+        "items": [
+                    {
+              "type": "doctype",
+              "name": "Serie",
+              "label": _("Serie"),
+              "description": _("Description of Liste"),
+            },
+
+      {
+        "label":_("Media Management"),
+        "icon": "octicon octicon-briefcase",
+        "items": [
+                    {
+              "type": "doctype",
+              "name": "Staffel",
+              "label": _("Staffel"),
+              "description": _("Description of Liste"),
             }
+
         ]
       }
   ]
