@@ -7,23 +7,29 @@ def get_data():
         "label":_("Media Management"),
         "icon": "octicon octicon-briefcase",
         "items": [
-                    {
+            {
               "type": "doctype",
               "name": "Movie",
               "label": _("Movie"),
               "description": _("Description of Movie"),
             },
-                    {
+            {
               "type": "doctype",
               "name": "Serie",
               "label": _("Serie"),
               "description": _("Description of Serie"),
             },
-                                   {
+            {
               "type": "doctype",
               "name": "Book",
               "label": _("Book"),
               "description": _("Description of Book"),
+            },
+            {
+              "type": "doctype",
+              "name": "Game",
+              "label": _("Game"),
+              "description": _("Description of Game"),
             }
         ]
       }
