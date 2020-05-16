@@ -5,7 +5,7 @@ def get_data():
     return [
       {
         "label":_("Media Management"),
-        "icon": "octicon octicon-briefcase",
+        "icon": "octicon file-media",
         "items": [
             {
               "type": "doctype",
