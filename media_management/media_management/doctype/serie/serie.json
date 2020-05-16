@@ -6,49 +6,26 @@
  "engine": "InnoDB",
  "field_order": [
   "name1",
-  "anzahlstaffeln",
+  "watched",
   "column1",
-  "serie_seen",
+  "season_amount",
   "rating",
   "section1",
-  "staffeln",
-  "episoden"
+  "seanson_table",
+  "episode_table"
  ],
  "fields": [
   {
    "fieldname": "name1",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "name",
+   "label": "Name of Series",
    "reqd": 1
-  },
-  {
-   "fieldname": "anzahlstaffeln",
-   "fieldtype": "Int",
-   "label": "Anzahl Staffeln"
-  },
-  {
-   "fieldname": "staffeln",
-   "fieldtype": "Table",
-   "label": "Staffeln",
-   "options": "Season_table"
   },
   {
    "fieldname": "rating",
    "fieldtype": "Rating",
    "label": "Rating"
-  },
-  {
-   "default": "0",
-   "fieldname": "serie_seen",
-   "fieldtype": "Check",
-   "label": "Serie gesehen?"
-  },
-  {
-   "fieldname": "episoden",
-   "fieldtype": "Table",
-   "label": "Episoden",
-   "options": "Episode_table"
   },
   {
    "fieldname": "column1",
@@ -57,9 +34,32 @@
   {
    "fieldname": "section1",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "season_amount",
+   "fieldtype": "Int",
+   "label": "Amount of Seasons"
+  },
+  {
+   "default": "0",
+   "fieldname": "watched",
+   "fieldtype": "Check",
+   "label": "Watched?"
+  },
+  {
+   "fieldname": "seanson_table",
+   "fieldtype": "Table",
+   "label": "Season Table",
+   "options": "Season_table"
+  },
+  {
+   "fieldname": "episode_table",
+   "fieldtype": "Table",
+   "label": "Episode Table",
+   "options": "Episode_table"
   }
  ],
- "modified": "2020-05-16 07:40:02.394504",
+ "modified": "2020-05-16 09:11:31.757651",
  "modified_by": "Administrator",
  "module": "Media Management",
  "name": "Serie",

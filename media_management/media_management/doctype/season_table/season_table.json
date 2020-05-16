@@ -6,36 +6,44 @@
  "engine": "InnoDB",
  "field_order": [
   "name1",
-  "anzahlepisoden",
-  "seen"
+  "amount_of_episodes",
+  "watched",
+  "year_watched"
  ],
  "fields": [
   {
    "fieldname": "name1",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Name",
+   "label": "Season Name",
    "unique": 1
   },
   {
-   "fieldname": "anzahlepisoden",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Anzahl Episoden"
-  },
-  {
    "default": "0",
-   "fieldname": "seen",
+   "fieldname": "watched",
    "fieldtype": "Check",
    "in_list_view": 1,
-   "label": "Seen"
+   "label": "Watched?"
+  },
+  {
+   "fieldname": "year_watched",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Watched in Year"
+  },
+  {
+   "fieldname": "amount_of_episodes",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Amount of Episodes"
   }
  ],
  "istable": 1,
- "modified": "2020-05-11 16:58:22.099033",
+ "modified": "2020-05-16 08:54:42.316893",
  "modified_by": "Administrator",
  "module": "Media Management",
  "name": "Season_table",
+ "nsm_parent_field": "parent_season_table",
  "owner": "Administrator",
  "permissions": [],
  "quick_entry": 1,

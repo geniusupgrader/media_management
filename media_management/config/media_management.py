@@ -11,19 +11,19 @@ def get_data():
               "type": "doctype",
               "name": "Movie",
               "label": _("Movie"),
-              "description": _("Description of Liste"),
+              "description": _("Description of Movie"),
             },
                     {
               "type": "doctype",
               "name": "Serie",
               "label": _("Serie"),
-              "description": _("Description of Lists"),
+              "description": _("Description of Serie"),
             },
                                    {
               "type": "doctype",
-              "name": "Staffel",
-              "label": _("Staffel"),
-              "description": _("Description of Categories"),
+              "name": "Book",
+              "label": _("Book"),
+              "description": _("Description of Book"),
             }
         ]
       }

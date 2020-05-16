@@ -1,50 +1,50 @@
 {
- "autoname": "format:movie.{#####}",
- "creation": "2020-05-11 09:59:45.695374",
+ "autoname": "format:book.{#####}",
+ "creation": "2020-05-16 09:15:43.204647",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "name1",
-  "watched",
+  "read",
   "column1",
   "year_watched",
   "rating"
  ],
  "fields": [
   {
-   "fieldname": "rating",
-   "fieldtype": "Rating",
-   "label": "Rating"
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name of Book",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "read",
+   "fieldtype": "Check",
+   "label": "Read?"
   },
   {
    "fieldname": "column1",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "name1",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Name of Movie",
-   "reqd": 1
-  },
-  {
-   "default": "0",
-   "fieldname": "watched",
-   "fieldtype": "Check",
-   "label": "Watched?"
-  },
-  {
    "fieldname": "year_watched",
    "fieldtype": "Date",
-   "label": "Watched in Year"
+   "label": "Read in Year"
+  },
+  {
+   "fieldname": "rating",
+   "fieldtype": "Rating",
+   "label": "Rating"
   }
  ],
- "modified": "2020-05-16 09:09:11.441490",
+ "modified": "2020-05-16 09:18:07.873624",
  "modified_by": "Administrator",
  "module": "Media Management",
- "name": "Movie",
- "owner": "email@robinrosenstock.com",
+ "name": "Book",
+ "owner": "Administrator",
  "permissions": [
   {
    "create": 1,
