@@ -22,7 +22,7 @@
    "label": "Seen"
   }
  ],
- "modified": "2020-05-11 16:19:13.091731",
+ "modified": "2020-05-16 07:40:16.286802",
  "modified_by": "Administrator",
  "module": "Media Management",
  "name": "Movie",
@@ -41,7 +41,6 @@
    "write": 1
   }
  ],
- "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "title_field": "title",

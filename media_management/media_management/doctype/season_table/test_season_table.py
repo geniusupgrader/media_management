@@ -6,5 +6,5 @@ from __future__ import unicode_literals
 # import frappe
 import unittest
 
-class TestLink_staffel(unittest.TestCase):
+class TestSeason_table(unittest.TestCase):
 	pass
