@@ -1,5 +1,7 @@
 {
- "autoname": "format:serie-{#####}",
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:name1",
  "creation": "2020-05-11 15:19:01.604006",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -20,7 +22,8 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Name of Series",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "rating",
@@ -59,8 +62,8 @@
    "options": "Episode_table"
   }
  ],
- "modified": "2020-05-16 09:11:31.757651",
- "modified_by": "Administrator",
+ "modified": "2020-06-05 22:29:02.504454",
+ "modified_by": "email@robinrosenstock.com",
  "module": "Media Management",
  "name": "Serie",
  "owner": "Administrator",
