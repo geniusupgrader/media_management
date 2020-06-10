@@ -1,15 +1,20 @@
 {
- "autoname": "format:movie.{#####}",
+ "autoname": "field:name1",
  "creation": "2020-05-11 09:59:45.695374",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "name1",
-  "watched",
+  "rating",
+  "status",
+  "date_watched",
+  "date_watched_approx",
+  "year_released",
+  "genre",
   "column1",
-  "year_watched",
-  "rating"
+  "poster",
+  "attach_image"
  ],
  "fields": [
   {
@@ -26,22 +31,50 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Name of Movie",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
-   "default": "0",
-   "fieldname": "watched",
-   "fieldtype": "Check",
-   "label": "Watched?"
+   "fieldname": "poster",
+   "fieldtype": "Image",
+   "label": "Poster",
+   "options": "attach_image"
   },
   {
-   "fieldname": "year_watched",
+   "fieldname": "attach_image",
+   "fieldtype": "Attach Image"
+  },
+  {
+   "fieldname": "date_watched_approx",
+   "fieldtype": "Int",
+   "label": "Date watched (approximately)"
+  },
+  {
+   "default": "Completed",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Completed\nNoted\nAborted"
+  },
+  {
+   "fieldname": "date_watched",
    "fieldtype": "Date",
-   "label": "Watched in Year"
+   "label": "Date watched"
+  },
+  {
+   "fieldname": "year_released",
+   "fieldtype": "Int",
+   "label": "Year released"
+  },
+  {
+   "fieldname": "genre",
+   "fieldtype": "Table MultiSelect",
+   "label": "Genre",
+   "options": "Genre_table"
   }
  ],
- "modified": "2020-05-16 09:09:11.441490",
- "modified_by": "Administrator",
+ "modified": "2020-06-07 16:25:30.960114",
+ "modified_by": "email@robinrosenstock.com",
  "module": "Media Management",
  "name": "Movie",
  "owner": "email@robinrosenstock.com",
@@ -61,8 +94,5 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "title_field": "name1",
- "track_changes": 1,
- "track_seen": 1,
- "track_views": 1
+ "track_changes": 1
 }

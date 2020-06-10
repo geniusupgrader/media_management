@@ -1,15 +1,20 @@
 {
- "autoname": "format:book.{#####}",
+ "autoname": "field:name1",
  "creation": "2020-05-16 09:19:05.468529",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "name1",
-  "read",
+  "rating",
+  "status",
+  "date_played",
+  "date_played_aprox",
+  "year_released",
+  "genre",
   "column1",
-  "year_watched",
-  "rating"
+  "image",
+  "attach_image"
  ],
  "fields": [
   {
@@ -17,31 +22,59 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Name of Game",
-   "reqd": 1
-  },
-  {
-   "default": "0",
-   "fieldname": "read",
-   "fieldtype": "Check",
-   "label": "Played?"
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "column1",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "year_watched",
-   "fieldtype": "Date",
-   "label": "Played in Year"
-  },
-  {
    "fieldname": "rating",
    "fieldtype": "Rating",
    "label": "Rating"
+  },
+  {
+   "default": "Noted",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Playing\nCompleted\nNoted\nAborted"
+  },
+  {
+   "fieldname": "date_played",
+   "fieldtype": "Date",
+   "label": "Date played"
+  },
+  {
+   "fieldname": "date_played_aprox",
+   "fieldtype": "Int",
+   "label": "Date played (approximately)"
+  },
+  {
+   "fieldname": "year_released",
+   "fieldtype": "Int",
+   "label": "Year released"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Image",
+   "label": "Poster",
+   "options": "attach_image"
+  },
+  {
+   "fieldname": "attach_image",
+   "fieldtype": "Attach Image"
+  },
+  {
+   "fieldname": "genre",
+   "fieldtype": "Table MultiSelect",
+   "label": "Genre",
+   "options": "Genre_table"
   }
  ],
- "modified": "2020-05-16 09:19:05.468529",
- "modified_by": "Administrator",
+ "modified": "2020-06-07 16:27:33.464439",
+ "modified_by": "email@robinrosenstock.com",
  "module": "Media Management",
  "name": "Game",
  "owner": "Administrator",
@@ -61,7 +94,6 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "title_field": "name1",
  "track_changes": 1,
  "track_seen": 1,
  "track_views": 1

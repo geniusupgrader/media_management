@@ -1,45 +1,42 @@
 {
- "autoname": "field:name1",
  "creation": "2020-05-11 15:30:36.691547",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "name1",
   "amount_of_episodes",
-  "watched",
-  "year_watched"
+  "year_aired",
+  "date_started",
+  "date_finished"
  ],
  "fields": [
   {
-   "fieldname": "name1",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Season Name",
-   "unique": 1
-  },
-  {
-   "default": "0",
-   "fieldname": "watched",
-   "fieldtype": "Check",
-   "in_list_view": 1,
-   "label": "Watched?"
-  },
-  {
-   "fieldname": "year_watched",
-   "fieldtype": "Date",
-   "in_list_view": 1,
-   "label": "Watched in Year"
-  },
-  {
    "fieldname": "amount_of_episodes",
-   "fieldtype": "Data",
+   "fieldtype": "Int",
    "in_list_view": 1,
    "label": "Amount of Episodes"
+  },
+  {
+   "fieldname": "year_aired",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Year aired"
+  },
+  {
+   "fieldname": "date_started",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date Started"
+  },
+  {
+   "fieldname": "date_finished",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date Finished"
   }
  ],
  "istable": 1,
- "modified": "2020-05-16 08:54:42.316893",
+ "modified": "2020-06-07 12:50:52.669604",
  "modified_by": "Administrator",
  "module": "Media Management",
  "name": "Season_table",

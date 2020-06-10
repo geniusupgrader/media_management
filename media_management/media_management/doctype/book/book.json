@@ -1,15 +1,21 @@
 {
- "autoname": "format:book.{#####}",
+ "autoname": "field:name1",
  "creation": "2020-05-16 09:15:43.204647",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "name1",
-  "read",
+  "rating",
+  "status",
+  "date_started",
+  "date_finished",
+  "year_released",
+  "amount_of_pages",
+  "genre",
   "column1",
-  "year_watched",
-  "rating"
+  "cover_image",
+  "attach_image"
  ],
  "fields": [
   {
@@ -17,31 +23,64 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Name of Book",
-   "reqd": 1
-  },
-  {
-   "default": "0",
-   "fieldname": "read",
-   "fieldtype": "Check",
-   "label": "Read?"
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "column1",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "year_watched",
-   "fieldtype": "Date",
-   "label": "Read in Year"
-  },
-  {
    "fieldname": "rating",
    "fieldtype": "Rating",
    "label": "Rating"
+  },
+  {
+   "fieldname": "date_finished",
+   "fieldtype": "Date",
+   "label": "Date finished"
+  },
+  {
+   "fieldname": "cover_image",
+   "fieldtype": "Image",
+   "label": "Cover Image",
+   "options": "attach_image"
+  },
+  {
+   "fieldname": "attach_image",
+   "fieldtype": "Attach Image"
+  },
+  {
+   "fieldname": "amount_of_pages",
+   "fieldtype": "Int",
+   "label": "Amount of Pages"
+  },
+  {
+   "fieldname": "date_started",
+   "fieldtype": "Date",
+   "label": "Date started"
+  },
+  {
+   "default": "Noted",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Reading\nCompleted\nNoted\nAborted"
+  },
+  {
+   "fieldname": "year_released",
+   "fieldtype": "Int",
+   "label": "Year released"
+  },
+  {
+   "fieldname": "genre",
+   "fieldtype": "Table MultiSelect",
+   "label": "Genre",
+   "options": "Genre_table"
   }
  ],
- "modified": "2020-05-16 09:18:07.873624",
- "modified_by": "Administrator",
+ "modified": "2020-06-07 16:28:35.875799",
+ "modified_by": "email@robinrosenstock.com",
  "module": "Media Management",
  "name": "Book",
  "owner": "Administrator",
@@ -61,8 +100,5 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "title_field": "name1",
- "track_changes": 1,
- "track_seen": 1,
- "track_views": 1
+ "track_changes": 1
 }
