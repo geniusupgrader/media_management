@@ -1,0 +1,103 @@
+{
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:name1",
+ "creation": "2020-05-11 15:19:01.604006",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "rating",
+  "status",
+  "year_released",
+  "genre",
+  "column1",
+  "poster",
+  "attach_image",
+  "section1",
+  "episode_table"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name of Series",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "rating",
+   "fieldtype": "Rating",
+   "in_list_view": 1,
+   "label": "Rating"
+  },
+  {
+   "fieldname": "column1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "poster",
+   "fieldtype": "Image",
+   "label": "Poster",
+   "options": "attach_image"
+  },
+  {
+   "fieldname": "attach_image",
+   "fieldtype": "Attach Image"
+  },
+  {
+   "fieldname": "episode_table",
+   "fieldtype": "Table",
+   "label": "Episode Table",
+   "options": "Episode_table_media_management"
+  },
+  {
+   "default": "Watching",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Watching\nCompleted\nNoted\nAborted"
+  },
+  {
+   "fieldname": "year_released",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Year released"
+  },
+  {
+   "fieldname": "genre",
+   "fieldtype": "Table MultiSelect",
+   "label": "Genre",
+   "options": "Genre_table_media_management"
+  }
+ ],
+ "modified": "2020-06-11 11:49:01.815097",
+ "modified_by": "Administrator",
+ "module": "Media Management",
+ "name": "Serie_media_management",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

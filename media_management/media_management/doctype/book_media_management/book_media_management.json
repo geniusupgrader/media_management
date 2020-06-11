@@ -1,0 +1,108 @@
+{
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:name1",
+ "creation": "2020-05-16 09:15:43.204647",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "rating",
+  "status",
+  "date_started",
+  "date_finished",
+  "year_released",
+  "amount_of_pages",
+  "genre",
+  "column1",
+  "cover_image",
+  "attach_image"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name of Book",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rating",
+   "fieldtype": "Rating",
+   "label": "Rating"
+  },
+  {
+   "fieldname": "date_finished",
+   "fieldtype": "Date",
+   "label": "Date finished"
+  },
+  {
+   "fieldname": "cover_image",
+   "fieldtype": "Image",
+   "label": "Cover Image",
+   "options": "attach_image"
+  },
+  {
+   "fieldname": "attach_image",
+   "fieldtype": "Attach Image"
+  },
+  {
+   "fieldname": "amount_of_pages",
+   "fieldtype": "Int",
+   "label": "Amount of Pages"
+  },
+  {
+   "fieldname": "date_started",
+   "fieldtype": "Date",
+   "label": "Date started"
+  },
+  {
+   "default": "Noted",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Reading\nCompleted\nNoted\nAborted"
+  },
+  {
+   "fieldname": "year_released",
+   "fieldtype": "Int",
+   "label": "Year released"
+  },
+  {
+   "fieldname": "genre",
+   "fieldtype": "Table MultiSelect",
+   "label": "Genre",
+   "options": "Genre_table_media_management"
+  }
+ ],
+ "modified": "2020-06-11 11:48:42.085712",
+ "modified_by": "Administrator",
+ "module": "Media Management",
+ "name": "Book_media_management",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "status",
+ "track_changes": 1
+}

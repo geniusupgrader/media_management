@@ -1,0 +1,28 @@
+{
+ "creation": "2020-06-07 16:24:24.713976",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "genre"
+ ],
+ "fields": [
+  {
+   "fieldname": "genre",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Genre",
+   "options": "Genre_media_management"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-06-11 11:44:06.905905",
+ "modified_by": "Administrator",
+ "module": "Media Management",
+ "name": "Genre_table_media_management",
+ "owner": "email@robinrosenstock.com",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
