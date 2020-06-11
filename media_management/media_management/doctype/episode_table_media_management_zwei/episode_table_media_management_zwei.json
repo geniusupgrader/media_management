@@ -1,0 +1,64 @@
+{
+ "creation": "2020-06-11 14:32:22.780392",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "season",
+  "episode",
+  "completed",
+  "date_watched",
+  "date_watched_approx",
+  "date_aired"
+ ],
+ "fields": [
+  {
+   "fieldname": "season",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Season"
+  },
+  {
+   "fieldname": "episode",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Episode"
+  },
+  {
+   "default": "0",
+   "fieldname": "completed",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Completed"
+  },
+  {
+   "fieldname": "date_watched",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date watched"
+  },
+  {
+   "fieldname": "date_watched_approx",
+   "fieldtype": "Int",
+   "label": "Date watched (approximately)"
+  },
+  {
+   "fieldname": "date_aired",
+   "fieldtype": "Date",
+   "label": "Date aired"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-06-11 14:32:22.780392",
+ "modified_by": "Administrator",
+ "module": "Media Management",
+ "name": "Episode_table_media_management_zwei",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

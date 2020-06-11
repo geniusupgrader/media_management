@@ -1,6 +1,6 @@
 {
  "autoname": "field:name1",
- "creation": "2020-05-11 09:59:45.695374",
+ "creation": "2020-06-11 12:51:10.661568",
  "doctype": "DocType",
  "document_type": "Document",
  "editable_grid": 1,
@@ -19,15 +19,6 @@
  ],
  "fields": [
   {
-   "fieldname": "rating",
-   "fieldtype": "Rating",
-   "label": "Rating"
-  },
-  {
-   "fieldname": "column1",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "name1",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -36,19 +27,9 @@
    "unique": 1
   },
   {
-   "fieldname": "poster",
-   "fieldtype": "Image",
-   "label": "Poster",
-   "options": "attach_image"
-  },
-  {
-   "fieldname": "attach_image",
-   "fieldtype": "Attach Image"
-  },
-  {
-   "fieldname": "date_watched_approx",
-   "fieldtype": "Int",
-   "label": "Date watched (approximately)"
+   "fieldname": "rating",
+   "fieldtype": "Rating",
+   "label": "Rating"
   },
   {
    "default": "Completed",
@@ -63,6 +44,11 @@
    "label": "Date watched"
   },
   {
+   "fieldname": "date_watched_approx",
+   "fieldtype": "Int",
+   "label": "Date watched (approximately)"
+  },
+  {
    "fieldname": "year_released",
    "fieldtype": "Int",
    "label": "Year released"
@@ -72,13 +58,27 @@
    "fieldtype": "Table MultiSelect",
    "label": "Genre",
    "options": "Genre_table_media_management"
+  },
+  {
+   "fieldname": "column1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "poster",
+   "fieldtype": "Image",
+   "label": "Poster",
+   "options": "attach_image"
+  },
+  {
+   "fieldname": "attach_image",
+   "fieldtype": "Attach Image"
   }
  ],
- "modified": "2020-06-11 11:48:54.391280",
+ "modified": "2020-06-11 12:51:10.661568",
  "modified_by": "Administrator",
  "module": "Media Management",
  "name": "Movie_media_management",
- "owner": "email@robinrosenstock.com",
+ "owner": "Administrator",
  "permissions": [
   {
    "create": 1,

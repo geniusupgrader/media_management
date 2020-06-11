@@ -2,7 +2,7 @@
  "allow_import": 1,
  "allow_rename": 1,
  "autoname": "field:name1",
- "creation": "2020-05-11 15:19:01.604006",
+ "creation": "2020-06-11 14:56:13.489992",
  "doctype": "DocType",
  "document_type": "Document",
  "editable_grid": 1,
@@ -11,77 +11,71 @@
   "name1",
   "rating",
   "status",
+  "date_started",
+  "date_finished",
   "year_released",
+  "amount_of_pages",
   "genre",
-  "column1",
-  "poster",
-  "attach_image",
-  "section1",
-  "episode_table"
+  "attach_image"
  ],
  "fields": [
   {
    "fieldname": "name1",
    "fieldtype": "Data",
-   "label": "Name of Series",
+   "in_list_view": 1,
+   "label": "Name of Book",
    "reqd": 1,
    "unique": 1
   },
   {
    "fieldname": "rating",
    "fieldtype": "Rating",
-   "in_list_view": 1,
    "label": "Rating"
   },
   {
-   "fieldname": "column1",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "section1",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "poster",
-   "fieldtype": "Image",
-   "label": "Poster",
-   "options": "attach_image"
-  },
-  {
-   "fieldname": "attach_image",
-   "fieldtype": "Attach Image"
-  },
-  {
-   "fieldname": "episode_table",
-   "fieldtype": "Table",
-   "label": "Episode Table",
-   "options": "Episode_table_media_management"
-  },
-  {
-   "default": "Watching",
+   "default": "Noted",
    "fieldname": "status",
    "fieldtype": "Select",
-   "in_list_view": 1,
    "label": "Status",
-   "options": "Watching\nCompleted\nNoted\nAborted"
+   "options": "Reading\nCompleted\nNoted\nAborted"
+  },
+  {
+   "fieldname": "date_started",
+   "fieldtype": "Date",
+   "label": "Date started"
+  },
+  {
+   "fieldname": "date_finished",
+   "fieldtype": "Date",
+   "label": "Date finished"
   },
   {
    "fieldname": "year_released",
    "fieldtype": "Int",
-   "in_list_view": 1,
    "label": "Year released"
+  },
+  {
+   "fieldname": "amount_of_pages",
+   "fieldtype": "Int",
+   "label": "Amount of Pages"
   },
   {
    "fieldname": "genre",
    "fieldtype": "Table MultiSelect",
    "label": "Genre",
    "options": "Genre_table_media_management"
+  },
+  {
+   "fieldname": "attach_image",
+   "fieldtype": "Attach Image",
+   "hidden": 1
   }
  ],
- "modified": "2020-06-11 11:49:01.815097",
+ "image_field": "attach_image",
+ "modified": "2020-06-11 15:03:40.663898",
  "modified_by": "Administrator",
  "module": "Media Management",
- "name": "Serie_media_management",
+ "name": "Book_media_management_zwei",
  "owner": "Administrator",
  "permissions": [
   {
@@ -99,5 +93,6 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
+ "title_field": "status",
  "track_changes": 1
 }
