@@ -9,25 +9,25 @@ def get_data():
         "items": [
             {
               "type": "doctype",
-              "name": "Movie",
+              "name": "Movie_media_management",
               "label": _("Movie"),
               "description": _("Description of Movie"),
             },
             {
               "type": "doctype",
-              "name": "Serie",
+              "name": "Serie_media_management",
               "label": _("Serie"),
               "description": _("Description of Serie"),
             },
             {
               "type": "doctype",
-              "name": "Book",
+              "name": "Book_media_management",
               "label": _("Book"),
               "description": _("Description of Book"),
             },
             {
               "type": "doctype",
-              "name": "Game",
+              "name": "Game_media_management",
               "label": _("Game"),
               "description": _("Description of Game"),
             }
