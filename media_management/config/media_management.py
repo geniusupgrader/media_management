@@ -11,6 +11,7 @@ def get_data():
               "name": "Movie_media_management_zwei",
               "label": _("Movie"),
               "description": _("Description of Movie"),
+              "onboard": 1,
             }
         ]
       }
