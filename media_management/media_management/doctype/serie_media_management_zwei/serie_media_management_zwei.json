@@ -13,6 +13,7 @@
   "status",
   "year_released",
   "genre",
+  "trailer",
   "column1",
   "attach_image",
   "section1",
@@ -70,11 +71,16 @@
    "fieldtype": "Table",
    "label": "Episode Table",
    "options": "Episode_table_media_management_zwei"
+  },
+  {
+   "fieldname": "trailer",
+   "fieldtype": "Data",
+   "label": "Trailer"
   }
  ],
  "image_field": "attach_image",
- "modified": "2020-06-11 14:34:50.107530",
- "modified_by": "Administrator",
+ "modified": "2020-06-11 19:27:59.123755",
+ "modified_by": "email@robinrosenstock.com",
  "module": "Media Management",
  "name": "Serie_media_management_zwei",
  "owner": "Administrator",

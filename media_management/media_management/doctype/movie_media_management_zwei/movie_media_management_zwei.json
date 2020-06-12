@@ -15,6 +15,7 @@
   "date_watched_approx",
   "year_released",
   "genre",
+  "trailer",
   "attach_image"
  ],
  "fields": [
@@ -27,12 +28,16 @@
   {
    "fieldname": "rating",
    "fieldtype": "Rating",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Rating"
   },
   {
    "default": "Completed",
    "fieldname": "status",
    "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Status",
    "options": "Noted\nCompleted\nAborted"
   },
@@ -40,16 +45,6 @@
    "fieldname": "date_watched",
    "fieldtype": "Date",
    "label": "Date Watched"
-  },
-  {
-   "fieldname": "date_watched_approx",
-   "fieldtype": "Date",
-   "label": "Date watched (approximately)"
-  },
-  {
-   "fieldname": "year_released",
-   "fieldtype": "Date",
-   "label": "Year released"
   },
   {
    "fieldname": "genre",
@@ -61,10 +56,27 @@
    "fieldname": "attach_image",
    "fieldtype": "Attach Image",
    "hidden": 1
+  },
+  {
+   "fieldname": "date_watched_approx",
+   "fieldtype": "Int",
+   "label": "Date Watched (Approximately)"
+  },
+  {
+   "fieldname": "year_released",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Year released"
+  },
+  {
+   "fieldname": "trailer",
+   "fieldtype": "Data",
+   "label": "Trailer"
   }
  ],
  "image_field": "attach_image",
- "modified": "2020-06-11 18:13:30.248384",
+ "modified": "2020-06-11 19:22:42.253259",
  "modified_by": "email@robinrosenstock.com",
  "module": "Media Management",
  "name": "Movie_media_management_zwei",
