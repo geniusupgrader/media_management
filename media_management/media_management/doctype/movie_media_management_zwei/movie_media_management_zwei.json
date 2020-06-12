@@ -4,7 +4,7 @@
  "autoname": "field:name1",
  "creation": "2020-06-11 13:13:02.472833",
  "doctype": "DocType",
- "document_type": "Document",
+ "document_type": "Setup",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
@@ -76,7 +76,7 @@
   }
  ],
  "image_field": "attach_image",
- "modified": "2020-06-11 19:22:42.253259",
+ "modified": "2020-06-12 19:37:10.395061",
  "modified_by": "email@robinrosenstock.com",
  "module": "Media Management",
  "name": "Movie_media_management_zwei",

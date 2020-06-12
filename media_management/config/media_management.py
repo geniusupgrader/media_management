@@ -9,7 +9,7 @@ def get_data():
         "items": [
             {
               "type": "doctype",
-              "name": "Movie_media_management_zwei",
+              "name": "movie_media_management_zwei",
               "label": _("Movie"),
               "description": _("Description of Exercise"),
             }
