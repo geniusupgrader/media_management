@@ -1,0 +1,30 @@
+{
+ "creation": "2020-06-21 08:42:03.362815",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "category"
+ ],
+ "fields": [
+  {
+   "fieldname": "category",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Category",
+   "options": "Category_media_management",
+   "reqd": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-06-21 08:45:29.479353",
+ "modified_by": "Administrator",
+ "module": "Media Management",
+ "name": "Category_table_media_management",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

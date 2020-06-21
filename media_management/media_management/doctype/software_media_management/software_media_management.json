@@ -1,0 +1,117 @@
+{
+ "allow_events_in_timeline": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:{name1}",
+ "creation": "2020-06-21 08:52:21.787019",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "liste",
+  "category",
+  "platform",
+  "inuse",
+  "extension",
+  "license",
+  "section_break_6",
+  "homepage",
+  "repo",
+  "section_break_11",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "liste",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Liste",
+   "options": "List_media_management"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Table MultiSelect",
+   "label": "Category",
+   "options": "Category_table_media_management"
+  },
+  {
+   "fieldname": "platform",
+   "fieldtype": "Table MultiSelect",
+   "label": "Platform",
+   "options": "Platform_table_media_management"
+  },
+  {
+   "default": "0",
+   "fieldname": "inuse",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "In Use"
+  },
+  {
+   "fieldname": "extension",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Extension",
+   "options": "Software_media_management"
+  },
+  {
+   "fieldname": "license",
+   "fieldtype": "Select",
+   "label": "License",
+   "options": "\nMit\nGPL 2\nGPL 3\nProprietary"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "homepage",
+   "fieldtype": "Data",
+   "label": "Homepage"
+  },
+  {
+   "fieldname": "repo",
+   "fieldtype": "Data",
+   "label": "Repo"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Markdown Editor",
+   "label": "Notes"
+  }
+ ],
+ "modified": "2020-06-21 11:50:50.091416",
+ "modified_by": "Administrator",
+ "module": "Media Management",
+ "name": "Software_media_management",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_views": 1
+}
