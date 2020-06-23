@@ -47,6 +47,42 @@ def get_data():
               "name": "Genre_media_management",
               "label": _("Genre"),
               "description": _("Description of Exercise"),
+            },
+            {
+              "type": "doctype",
+              "name": "List_media_management",
+              "label": _("List"),
+              "description": _("Description of Liste"),
+            },
+            {
+              "type": "doctype",
+              "name": "Software_media_management",
+              "label": _("Software"),
+              "description": _("Description of Software"),
+            },     
+            {
+              "type": "doctype",
+              "name": "Category_media_management",
+              "label": _("Category"),
+              "description": _("Description of Category"),
+            },
+            {
+              "type": "doctype",
+              "name": "Link_media_management",
+              "label": _("Link"),
+              "description": _("Description of Category"),
+            },
+            {
+              "type": "doctype",
+              "name": "Link_collection_media_management",
+              "label": _("Link Collection"),
+              "description": _("Description of Category"),
+            },
+            {
+              "type": "doctype",
+              "name": "Platform_media_management",
+              "label": _("Platform"),
+              "description": _("Description of Platform"),
             }
         ]
       }
