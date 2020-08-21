@@ -42,7 +42,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Status",
-   "options": "Watching\nCompleted\nNoted\nAborted"
+   "options": "In\nWatching\nCompleted\nNoted\nAborted"
   },
   {
    "fieldname": "year_released",
@@ -89,8 +89,8 @@
   }
  ],
  "image_field": "attach_image",
- "modified": "2020-06-20 16:03:49.643725",
- "modified_by": "Administrator",
+ "modified": "2020-08-18 19:15:14.260344",
+ "modified_by": "email@robinrosenstock.com",
  "module": "Media Management",
  "name": "Serie_media_management_zwei",
  "owner": "Administrator",
