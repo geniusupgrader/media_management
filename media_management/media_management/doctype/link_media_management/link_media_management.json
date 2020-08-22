@@ -1,7 +1,7 @@
 {
  "allow_import": 1,
  "allow_rename": 1,
- "autoname": "field:link",
+ "autoname": "Link.#####",
  "creation": "2020-06-21 08:47:09.653691",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -11,7 +11,8 @@
   "link",
   "category",
   "link_collection",
-  "dynamic_link_table"
+  "dynamic_link_table",
+  "link_read_only"
  ],
  "fields": [
   {
@@ -20,6 +21,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Link",
+   "reqd": 1,
    "unique": 1
   },
   {
@@ -34,11 +36,14 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Link Collection",
-   "options": "Link_collection_media_management"
+   "options": "Link_collection_media_management",
+   "unique": 1
   },
   {
    "fieldname": "name1",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Name"
   },
   {
@@ -46,10 +51,15 @@
    "fieldtype": "Table",
    "label": "Dynamic Link",
    "options": "Dynamic Link"
+  },
+  {
+   "fieldname": "link_read_only",
+   "fieldtype": "Read Only",
+   "label": "Link"
   }
  ],
- "modified": "2020-08-21 22:52:08.675230",
- "modified_by": "Administrator",
+ "modified": "2020-08-22 09:33:45.254198",
+ "modified_by": "email@robinrosenstock.com",
  "module": "Media Management",
  "name": "Link_media_management",
  "owner": "Administrator",
