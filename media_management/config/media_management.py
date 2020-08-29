@@ -4,7 +4,7 @@ from frappe import _
 def get_data():
     return [
       {
-        "label":_("Media Management"),
+        "label":_("Main Components"),
         "items": [
             {
               "type": "doctype",
@@ -38,6 +38,23 @@ def get_data():
             },
             {
               "type": "doctype",
+              "name": "Software_media_management",
+              "label": _("Software"),
+              "description": _("Description of Software"),
+            },     
+            {
+              "type": "doctype",
+              "name": "Link_media_management",
+              "label": _("Link"),
+              "description": _("Description of Category"),
+            }
+                    ],
+      },
+      {
+"label":_("Helper Components"),
+        "items": [
+            {
+              "type": "doctype",
               "name": "Source_media_management",
               "label": _("Source"),
               "description": _("Description of Exercise"),
@@ -56,20 +73,8 @@ def get_data():
             },
             {
               "type": "doctype",
-              "name": "Software_media_management",
-              "label": _("Software"),
-              "description": _("Description of Software"),
-            },     
-            {
-              "type": "doctype",
               "name": "Category_media_management",
               "label": _("Category"),
-              "description": _("Description of Category"),
-            },
-            {
-              "type": "doctype",
-              "name": "Link_media_management",
-              "label": _("Link"),
               "description": _("Description of Category"),
             },
             {
@@ -85,5 +90,7 @@ def get_data():
               "description": _("Description of Platform"),
             }
         ]
+
+
       }
   ]
