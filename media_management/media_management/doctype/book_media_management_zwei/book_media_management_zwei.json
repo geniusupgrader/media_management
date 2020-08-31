@@ -9,6 +9,8 @@
  "engine": "InnoDB",
  "field_order": [
   "name1",
+  "book_title_read_only",
+  "isbn",
   "rating",
   "status",
   "date_started",
@@ -69,11 +71,21 @@
    "fieldname": "attach_image",
    "fieldtype": "Attach Image",
    "hidden": 1
+  },
+  {
+   "fieldname": "isbn",
+   "fieldtype": "Data",
+   "label": "ISBN"
+  },
+  {
+   "fieldname": "book_title_read_only",
+   "fieldtype": "Read Only",
+   "label": "Book Title Read only"
   }
  ],
  "image_field": "attach_image",
- "modified": "2020-06-11 15:03:40.663898",
- "modified_by": "Administrator",
+ "modified": "2020-08-31 22:24:32.602828",
+ "modified_by": "email@robinrosenstock.com",
  "module": "Media Management",
  "name": "Book_media_management_zwei",
  "owner": "Administrator",
@@ -93,6 +105,5 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "title_field": "status",
  "track_changes": 1
 }
