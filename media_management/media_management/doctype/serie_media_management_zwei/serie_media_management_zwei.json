@@ -9,6 +9,7 @@
  "engine": "InnoDB",
  "field_order": [
   "name1",
+  "name_read_only",
   "rating",
   "status",
   "year_released",
@@ -86,10 +87,15 @@
    "fieldtype": "Table",
    "label": "Season Table",
    "options": "Season_table_media_management_zwei"
+  },
+  {
+   "fieldname": "name_read_only",
+   "fieldtype": "Read Only",
+   "label": "Name Read Only"
   }
  ],
  "image_field": "attach_image",
- "modified": "2020-08-18 19:15:14.260344",
+ "modified": "2020-08-31 22:36:31.135393",
  "modified_by": "email@robinrosenstock.com",
  "module": "Media Management",
  "name": "Serie_media_management_zwei",
