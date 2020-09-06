@@ -38,6 +38,7 @@
    "default": "Noted",
    "fieldname": "status",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Status",
    "options": "Reading\nCompleted\nNoted\nAborted"
   },
@@ -75,6 +76,7 @@
   {
    "fieldname": "isbn",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "ISBN"
   },
   {
@@ -84,7 +86,7 @@
   }
  ],
  "image_field": "attach_image",
- "modified": "2020-08-31 22:24:32.602828",
+ "modified": "2020-08-31 22:53:32.134324",
  "modified_by": "email@robinrosenstock.com",
  "module": "Media Management",
  "name": "Book_media_management_zwei",
