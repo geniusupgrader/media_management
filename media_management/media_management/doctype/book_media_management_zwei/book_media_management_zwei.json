@@ -13,11 +13,12 @@
   "isbn",
   "rating",
   "status",
-  "date_started",
-  "date_finished",
-  "year_released",
   "amount_of_pages",
-  "genre",
+  "science_field",
+  "publication_date",
+  "authors",
+  "language",
+  "note",
   "attach_image"
  ],
  "fields": [
@@ -43,30 +44,9 @@
    "options": "Reading\nCompleted\nNoted\nAborted"
   },
   {
-   "fieldname": "date_started",
-   "fieldtype": "Date",
-   "label": "Date started"
-  },
-  {
-   "fieldname": "date_finished",
-   "fieldtype": "Date",
-   "label": "Date finished"
-  },
-  {
-   "fieldname": "year_released",
-   "fieldtype": "Int",
-   "label": "Year released"
-  },
-  {
    "fieldname": "amount_of_pages",
    "fieldtype": "Int",
    "label": "Amount of Pages"
-  },
-  {
-   "fieldname": "genre",
-   "fieldtype": "Table MultiSelect",
-   "label": "Genre",
-   "options": "Genre_table_media_management"
   },
   {
    "fieldname": "attach_image",
@@ -83,10 +63,38 @@
    "fieldname": "book_title_read_only",
    "fieldtype": "Read Only",
    "label": "Book Title Read only"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Text Editor",
+   "label": "Note"
+  },
+  {
+   "fieldname": "science_field",
+   "fieldtype": "Link",
+   "label": "Science Field",
+   "options": "Science_field_media_management"
+  },
+  {
+   "fieldname": "publication_date",
+   "fieldtype": "Date",
+   "label": "Publication Date"
+  },
+  {
+   "fieldname": "language",
+   "fieldtype": "Link",
+   "label": "Language",
+   "options": "Language"
+  },
+  {
+   "fieldname": "authors",
+   "fieldtype": "Table",
+   "label": "Authors",
+   "options": "Author_table_media_management"
   }
  ],
  "image_field": "attach_image",
- "modified": "2020-08-31 22:53:32.134324",
+ "modified": "2020-09-06 14:47:15.524588",
  "modified_by": "email@robinrosenstock.com",
  "module": "Media Management",
  "name": "Book_media_management_zwei",

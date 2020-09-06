@@ -1,0 +1,28 @@
+{
+ "creation": "2020-08-10 18:14:37.403134",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "author"
+ ],
+ "fields": [
+  {
+   "fieldname": "author",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Author Name",
+   "options": "Author_media_management"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-09-06 14:51:23.526115",
+ "modified_by": "Administrator",
+ "module": "Media Management",
+ "name": "Author_table_media_management",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
