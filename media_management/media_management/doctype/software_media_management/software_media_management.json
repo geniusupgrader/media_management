@@ -19,12 +19,14 @@
   "homepage",
   "repo",
   "section_break_11",
-  "notes"
+  "notes",
+  "attach_image"
  ],
  "fields": [
   {
    "fieldname": "name1",
    "fieldtype": "Data",
+   "in_global_search": 1,
    "label": "Name",
    "unique": 1
   },
@@ -89,10 +91,16 @@
    "fieldname": "notes",
    "fieldtype": "Markdown Editor",
    "label": "Notes"
+  },
+  {
+   "fieldname": "attach_image",
+   "fieldtype": "Attach Image",
+   "hidden": 1
   }
  ],
- "modified": "2020-06-21 11:50:50.091416",
- "modified_by": "Administrator",
+ "image_field": "attach_image",
+ "modified": "2020-09-12 12:58:52.683426",
+ "modified_by": "email@robinrosenstock.com",
  "module": "Media Management",
  "name": "Software_media_management",
  "owner": "Administrator",

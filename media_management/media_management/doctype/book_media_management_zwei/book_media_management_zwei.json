@@ -10,6 +10,7 @@
  "field_order": [
   "name1",
   "book_title_read_only",
+  "attach",
   "isbn",
   "rating",
   "status",
@@ -91,10 +92,14 @@
    "fieldtype": "Table",
    "label": "Authors",
    "options": "Author_table_media_management"
+  },
+  {
+   "fieldname": "attach",
+   "fieldtype": "Attach"
   }
  ],
  "image_field": "attach_image",
- "modified": "2020-09-06 14:47:15.524588",
+ "modified": "2020-09-06 15:51:00.548192",
  "modified_by": "email@robinrosenstock.com",
  "module": "Media Management",
  "name": "Book_media_management_zwei",
