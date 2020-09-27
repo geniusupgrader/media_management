@@ -6,5 +6,5 @@ from __future__ import unicode_literals
 # import frappe
 import unittest
 
-class TestMovie_media_management_zwei(unittest.TestCase):
+class TestSerie_media_management(unittest.TestCase):
 	pass

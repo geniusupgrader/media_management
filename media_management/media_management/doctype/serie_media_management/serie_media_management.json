@@ -1,54 +1,55 @@
 {
+ "allow_import": 1,
+ "allow_rename": 1,
  "autoname": "field:name1",
- "creation": "2020-06-11 14:57:15.813677",
+ "creation": "2020-06-11 14:07:58.973992",
  "doctype": "DocType",
  "document_type": "Document",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "name1",
+  "name_read_only",
   "rating",
   "status",
-  "date_played",
-  "date_played_aprox",
   "year_released",
   "genre",
-  "attach_image"
+  "trailer",
+  "column1",
+  "attach_image",
+  "section1",
+  "season_table",
+  "episode_table"
  ],
  "fields": [
   {
    "fieldname": "name1",
    "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Name of Game",
+   "label": "Name of Series",
    "reqd": 1,
    "unique": 1
   },
   {
    "fieldname": "rating",
    "fieldtype": "Rating",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Rating"
   },
   {
-   "default": "Noted",
+   "default": "Watching",
    "fieldname": "status",
    "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Status",
-   "options": "Playing\nCompleted\nNoted\nAborted"
-  },
-  {
-   "fieldname": "date_played",
-   "fieldtype": "Date",
-   "label": "Date played"
-  },
-  {
-   "fieldname": "date_played_aprox",
-   "fieldtype": "Int",
-   "label": "Date played (approximately)"
+   "options": "In\nWatching\nCompleted\nNoted\nAborted"
   },
   {
    "fieldname": "year_released",
    "fieldtype": "Int",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Year released"
   },
   {
@@ -58,17 +59,46 @@
    "options": "Genre_table_media_management"
   },
   {
+   "fieldname": "column1",
+   "fieldtype": "Column Break"
+  },
+  {
    "fieldname": "attach_image",
    "fieldtype": "Attach Image",
-   "hidden": 1,
-   "label": "Attach Image"
+   "hidden": 1
+  },
+  {
+   "fieldname": "section1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "episode_table",
+   "fieldtype": "Table",
+   "label": "Episode Table",
+   "options": "Episode_table_media_management_3"
+  },
+  {
+   "fieldname": "trailer",
+   "fieldtype": "Data",
+   "label": "Trailer"
+  },
+  {
+   "fieldname": "season_table",
+   "fieldtype": "Table",
+   "label": "Season Table",
+   "options": "Season_table_media_management"
+  },
+  {
+   "fieldname": "name_read_only",
+   "fieldtype": "Read Only",
+   "label": "Name Read Only"
   }
  ],
  "image_field": "attach_image",
- "modified": "2020-06-11 15:04:24.821997",
+ "modified": "2020-09-27 12:23:39.380632",
  "modified_by": "Administrator",
  "module": "Media Management",
- "name": "Game_media_management_zwei",
+ "name": "Serie_media_management",
  "owner": "Administrator",
  "permissions": [
   {

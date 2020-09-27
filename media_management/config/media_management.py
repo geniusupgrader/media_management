@@ -8,19 +8,19 @@ def get_data():
         "items": [
             {
               "type": "doctype",
-              "name": "Movie_media_management_zwei",
+              "name": "Movie_media_management",
               "label": _("Movie"),
               "description": _("Description of Exercise"),
             },
             {
               "type": "doctype",
-              "name": "Serie_media_management_zwei",
+              "name": "Serie_media_management",
               "label": _("Serie"),
               "description": _("Description of Exercise"),
             },
             {
               "type": "doctype",
-              "name": "Book_media_management_zwei",
+              "name": "Book_media_management",
               "label": _("Book"),
               "description": _("Description of Exercise"),
             },

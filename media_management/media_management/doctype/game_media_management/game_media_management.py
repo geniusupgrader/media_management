@@ -6,5 +6,5 @@ from __future__ import unicode_literals
 # import frappe
 from frappe.model.document import Document
 
-class Game_media_management_zwei(Document):
+class Game_media_management(Document):
 	pass
