@@ -44,7 +44,7 @@ def get_data():
             },     
             {
               "type": "doctype",
-              "name": "Link_media_management",
+              "name": "Website_Link_media_management",
               "label": _("Link"),
               "description": _("Description of Category"),
             }

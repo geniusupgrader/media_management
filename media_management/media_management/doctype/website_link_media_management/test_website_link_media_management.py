@@ -6,5 +6,5 @@ from __future__ import unicode_literals
 # import frappe
 import unittest
 
-class TestLink_media_management(unittest.TestCase):
+class TestWebsite_Website_Link_media_management(unittest.TestCase):
 	pass
