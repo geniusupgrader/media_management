@@ -44,8 +44,14 @@ def get_data():
             },     
             {
               "type": "doctype",
+              "name": "Image_media_management",
+              "label": _("Image"),
+              "description": _("Description of Image"),
+            },     
+            {
+              "type": "doctype",
               "name": "Website_Link_media_management",
-              "label": _("Link"),
+              "label": _("Website Link"),
               "description": _("Description of Category"),
             }
                     ],
@@ -76,6 +82,12 @@ def get_data():
               "name": "Category_media_management",
               "label": _("Category"),
               "description": _("Description of Category"),
+            },
+            {
+              "type": "doctype",
+              "name": "License_media_management",
+              "label": _("License"),
+              "description": _("Description of License"),
             },
             {
               "type": "doctype",
