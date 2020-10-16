@@ -11,12 +11,13 @@ app_color = "grey"
 app_email = "robin.rosenstock@t-online.de"
 app_license = "MIT"
 
-# Includes in <head>
+# Includes in <head> 
 # ------------------
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/media_management/css/media_management.css"
-# app_include_js = "/assets/media_management/js/media_management.js"
+app_include_js = "/assets/js/lead_ext.js"
+# app_include_js = "/assets/media_management/js/lead_ext.js"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/media_management/css/media_management.css"
@@ -26,7 +27,10 @@ app_license = "MIT"
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-# doctype_js = {"doctype" : "public/js/doctype.js"}
+
+doctype_js = {"Lead" : "public/js/lead_ext2.js"}
+
+
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
@@ -86,6 +90,14 @@ app_license = "MIT"
 # 		"on_trash": "method"
 #	}
 # }
+
+# doc_events = {
+#     "Lead": {
+#         "before_save": "media_management.media_management.doctype.website_link_media_management.website_link_media_management.renderlinks"
+#     }
+# }
+
+
 
 # Scheduled Tasks
 # ---------------
