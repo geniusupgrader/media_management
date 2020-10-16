@@ -1,4 +1,5 @@
 {
+ "_comments": "[{\"comment\": \"<div>Cannot use link as the autoname (field:name1), because the link name goes in the title and c...\", \"by\": \"email@robinrosenstock.com\", \"name\": \"e1559eb6ee\"}]",
  "allow_import": 1,
  "allow_rename": 1,
  "autoname": "Link.#####",
@@ -9,10 +10,10 @@
  "field_order": [
   "name1",
   "link",
+  "link_read_only",
   "category",
   "link_collection",
-  "dynamic_link_table",
-  "link_read_only"
+  "dynamic_link_table"
  ],
  "fields": [
   {
@@ -53,12 +54,13 @@
    "options": "Dynamic Link"
   },
   {
+   "fetch_from": "link",
    "fieldname": "link_read_only",
    "fieldtype": "Read Only",
    "label": "Link"
   }
  ],
- "modified": "2020-08-22 09:33:45.254198",
+ "modified": "2020-10-12 20:30:57.757197",
  "modified_by": "email@robinrosenstock.com",
  "module": "Media Management",
  "name": "Website_Link_media_management",
