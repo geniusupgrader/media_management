@@ -65,12 +65,6 @@
    "options": "Software_media_management"
   },
   {
-   "fieldname": "license",
-   "fieldtype": "Select",
-   "label": "License",
-   "options": "\nMit\nGPL 2\nGPL 3\nProprietary"
-  },
-  {
    "fieldname": "section_break_6",
    "fieldtype": "Column Break"
   },
@@ -103,10 +97,16 @@
    "fieldtype": "Link",
    "label": "Lead",
    "options": "Lead"
+  },
+  {
+   "fieldname": "license",
+   "fieldtype": "Link",
+   "label": "License",
+   "options": "License_media_management"
   }
  ],
  "image_field": "attach_image",
- "modified": "2020-10-05 13:13:36.401920",
+ "modified": "2020-10-12 20:26:34.848217",
  "modified_by": "email@robinrosenstock.com",
  "module": "Media Management",
  "name": "Software_media_management",
