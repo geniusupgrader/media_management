@@ -8,7 +8,8 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "name1"
+  "name1",
+  "contact"
  ],
  "fields": [
   {
@@ -16,10 +17,16 @@
    "fieldtype": "Data",
    "label": "Name",
    "unique": 1
+  },
+  {
+   "fieldname": "contact",
+   "fieldtype": "Link",
+   "label": "Contact",
+   "options": "Contact"
   }
  ],
- "modified": "2020-09-06 14:51:20.186430",
- "modified_by": "Administrator",
+ "modified": "2020-10-18 12:43:18.393485",
+ "modified_by": "email@robinrosenstock.com",
  "module": "Media Management",
  "name": "Author_media_management",
  "owner": "Administrator",
