@@ -37,8 +37,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Link Collection",
-   "options": "Link_collection_media_management",
-   "unique": 1
+   "options": "Link_collection_media_management"
   },
   {
    "fieldname": "name1",
@@ -60,7 +59,7 @@
    "label": "Link"
   }
  ],
- "modified": "2020-10-12 20:30:57.757197",
+ "modified": "2020-10-18 10:59:13.375191",
  "modified_by": "email@robinrosenstock.com",
  "module": "Media Management",
  "name": "Website_Link_media_management",
