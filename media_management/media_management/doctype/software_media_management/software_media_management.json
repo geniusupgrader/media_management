@@ -2,7 +2,7 @@
  "allow_events_in_timeline": 1,
  "allow_import": 1,
  "allow_rename": 1,
- "autoname": "format:{name1}",
+ "autoname": "field:name1",
  "creation": "2020-06-21 08:52:21.787019",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -13,6 +13,7 @@
   "category",
   "platform",
   "inuse",
+  "discontinued",
   "extension",
   "license",
   "section_break_6",
@@ -103,10 +104,16 @@
    "fieldtype": "Link",
    "label": "License",
    "options": "License_media_management"
+  },
+  {
+   "default": "0",
+   "fieldname": "discontinued",
+   "fieldtype": "Check",
+   "label": "Discontinued"
   }
  ],
  "image_field": "attach_image",
- "modified": "2020-10-12 20:26:34.848217",
+ "modified": "2020-10-18 11:16:03.584443",
  "modified_by": "email@robinrosenstock.com",
  "module": "Media Management",
  "name": "Software_media_management",
