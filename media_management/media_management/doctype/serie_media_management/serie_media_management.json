@@ -33,7 +33,6 @@
    "fieldname": "rating",
    "fieldtype": "Rating",
    "in_list_view": 1,
-   "in_standard_filter": 1,
    "label": "Rating"
   },
   {
@@ -95,8 +94,8 @@
   }
  ],
  "image_field": "attach_image",
- "modified": "2020-09-27 12:28:09.563794",
- "modified_by": "Administrator",
+ "modified": "2020-11-08 10:44:08.283577",
+ "modified_by": "email@robinrosenstock.com",
  "module": "Media Management",
  "name": "Serie_media_management",
  "owner": "Administrator",
