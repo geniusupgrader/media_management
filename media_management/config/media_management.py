@@ -97,6 +97,12 @@ def get_data():
             },
             {
               "type": "doctype",
+              "name": "Author_media_management",
+              "label": _("Author"),
+              "description": _("Description of Author"),
+            },
+            {
+              "type": "doctype",
               "name": "Platform_media_management",
               "label": _("Platform"),
               "description": _("Description of Platform"),
