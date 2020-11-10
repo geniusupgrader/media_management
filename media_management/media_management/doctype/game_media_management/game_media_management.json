@@ -14,8 +14,15 @@
   "date_played",
   "date_played_aprox",
   "year_released",
+  "license",
   "genre",
-  "attach_image"
+  "attach_image",
+  "column_break1",
+  "homepage",
+  "repo",
+  "lead",
+  "section_break1",
+  "notes"
  ],
  "fields": [
   {
@@ -64,11 +71,46 @@
    "fieldtype": "Attach Image",
    "hidden": 1,
    "label": "Attach Image"
+  },
+  {
+   "fieldname": "column_break1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "homepage",
+   "fieldtype": "Data",
+   "label": "Homepage"
+  },
+  {
+   "fieldname": "repo",
+   "fieldtype": "Data",
+   "label": "Repo"
+  },
+  {
+   "fieldname": "lead",
+   "fieldtype": "Link",
+   "label": "Lead",
+   "options": "Lead"
+  },
+  {
+   "fieldname": "license",
+   "fieldtype": "Link",
+   "label": "License",
+   "options": "License_media_management"
+  },
+  {
+   "fieldname": "section_break1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Markdown Editor",
+   "label": "Notes"
   }
  ],
  "image_field": "attach_image",
- "modified": "2020-10-11 16:03:47.097575",
- "modified_by": "Administrator",
+ "modified": "2020-11-10 19:01:33.742657",
+ "modified_by": "email@robinrosenstock.com",
  "module": "Media Management",
  "name": "Game_media_management",
  "owner": "Administrator",
