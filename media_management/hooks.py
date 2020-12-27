@@ -16,7 +16,7 @@ app_license = "MIT"
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/media_management/css/media_management.css"
-app_include_js = "/assets/js/lead_ext.js"
+# app_include_js = "/assets/js/lead_ext.js"
 # app_include_js = "/assets/media_management/js/lead_ext.js"
 
 # include js, css files in header of web template
@@ -28,7 +28,7 @@ app_include_js = "/assets/js/lead_ext.js"
 
 # include js in doctype views
 
-doctype_js = {"Lead" : "public/js/lead_ext2.js"}
+# doctype_js = {"Lead" : "public/js/lead_ext2.js"}
 
 
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
