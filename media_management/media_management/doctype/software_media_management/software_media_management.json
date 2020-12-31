@@ -114,6 +114,7 @@
    "label": "Discontinued"
   },
   {
+   "default": "\"\"",
    "fieldname": "github_stars",
    "fieldtype": "Int",
    "label": "Github Stars",
@@ -127,7 +128,7 @@
   }
  ],
  "image_field": "attach_image",
- "modified": "2020-12-31 16:34:14.217020",
+ "modified": "2020-12-31 17:50:38.421559",
  "modified_by": "Administrator",
  "module": "Media Management",
  "name": "Software_media_management",
