@@ -90,11 +90,11 @@ def long_job(arg1, arg2):
 		doc = frappe.get_doc('Github_settings_media_management')
 		github_api_key = doc.api_github_key
 
-		print(software_name)
+		# print(software_name)
 
 		githubstars = do_github_query(github_api_key, github_repo_url)
 		# time.sleep(1)
-		print(githubstars)
+		# print(githubstars)
 
 		frappe.db.set_value("Software_media_management", software_name, "github_stars", githubstars)
 		frappe.db.set_value("Software_media_management", software_name, "github_stars_fetched_date", frappe.utils.nowdate())
