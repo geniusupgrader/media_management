@@ -106,6 +106,12 @@ def get_data():
               "name": "Platform_media_management",
               "label": _("Platform"),
               "description": _("Description of Platform"),
+            },
+            {
+              "type": "doctype",
+              "name": "Github_settings_media_management",
+              "label": _("Github Settings"),
+              "description": _("Description of Platform"),
             }
         ]
 
