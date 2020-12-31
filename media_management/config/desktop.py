@@ -7,7 +7,7 @@ def get_data():
 		{
 			"module_name": "Media Management",
 			"color": "grey",
-			"icon": "octicon octicon-file-directory",
+			"icon": "octicon octicon-device-desktop",
 			"type": "module",
 			"label": _("Media Management")
 		}

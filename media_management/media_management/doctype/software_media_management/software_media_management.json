@@ -117,18 +117,16 @@
    "default": "\"\"",
    "fieldname": "github_stars",
    "fieldtype": "Int",
-   "label": "Github Stars",
-   "read_only": 1
+   "label": "Github Stars"
   },
   {
    "fieldname": "github_stars_fetched_date",
    "fieldtype": "Date",
-   "label": "Github Stars fetched_date",
-   "read_only": 1
+   "label": "Github Stars fetched_date"
   }
  ],
  "image_field": "attach_image",
- "modified": "2020-12-31 17:50:38.421559",
+ "modified": "2020-12-31 17:59:12.865251",
  "modified_by": "Administrator",
  "module": "Media Management",
  "name": "Software_media_management",
