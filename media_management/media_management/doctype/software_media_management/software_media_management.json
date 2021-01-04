@@ -19,6 +19,7 @@
   "lead",
   "section_break_6",
   "homepage",
+  "homepage_read",
   "repo",
   "github_stars",
   "github_stars_fetched_date",
@@ -73,8 +74,9 @@
   },
   {
    "fieldname": "homepage",
-   "fieldtype": "Data",
-   "label": "Homepage"
+   "fieldtype": "Link",
+   "label": "Homepage",
+   "options": "Website_Link_media_management"
   },
   {
    "fieldname": "repo",
@@ -123,11 +125,18 @@
    "fieldname": "github_stars_fetched_date",
    "fieldtype": "Date",
    "label": "Github Stars fetched_date"
+  },
+  {
+   "fetch_from": "homepage.link_read_only",
+   "fieldname": "homepage_read",
+   "fieldtype": "Small Text",
+   "label": "Link Read only",
+   "read_only": 1
   }
  ],
  "image_field": "attach_image",
- "modified": "2020-12-31 17:59:12.865251",
- "modified_by": "Administrator",
+ "modified": "2021-01-04 15:17:51.943407",
+ "modified_by": "email@robinrosenstock.com",
  "module": "Media Management",
  "name": "Software_media_management",
  "owner": "Administrator",

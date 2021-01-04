@@ -1,5 +1,6 @@
 {
  "_comments": "[{\"comment\": \"<div>Cannot use link as the autoname (field:name1), because the link name goes in the title and c...\", \"by\": \"email@robinrosenstock.com\", \"name\": \"e1559eb6ee\"}]",
+ "allow_events_in_timeline": 1,
  "allow_import": 1,
  "allow_rename": 1,
  "autoname": "Link.#####",
@@ -8,22 +9,19 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "name1",
   "link",
   "link_read_only",
+  "description",
   "category",
   "link_collection",
-  "dynamic_link_table"
+  "links"
  ],
  "fields": [
   {
    "fieldname": "link",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
+   "fieldtype": "Small Text",
    "label": "Link",
-   "reqd": 1,
-   "unique": 1
+   "reqd": 1
   },
   {
    "fieldname": "category",
@@ -40,26 +38,26 @@
    "options": "Link_collection_media_management"
   },
   {
-   "fieldname": "name1",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Name"
+   "fetch_from": "link",
+   "fieldname": "link_read_only",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "Link"
   },
   {
-   "fieldname": "dynamic_link_table",
+   "fieldname": "links",
    "fieldtype": "Table",
-   "label": "Dynamic Link",
+   "label": "Links",
    "options": "Dynamic Link"
   },
   {
-   "fetch_from": "link",
-   "fieldname": "link_read_only",
-   "fieldtype": "Read Only",
-   "label": "Link"
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Description"
   }
  ],
- "modified": "2020-10-18 10:59:13.375191",
+ "modified": "2021-01-03 18:55:29.889125",
  "modified_by": "email@robinrosenstock.com",
  "module": "Media Management",
  "name": "Website_Link_media_management",
@@ -80,6 +78,6 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "title_field": "name1",
+ "title_field": "link_read_only",
  "track_changes": 1
 }
